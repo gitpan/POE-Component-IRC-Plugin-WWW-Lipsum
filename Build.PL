@@ -10,6 +10,10 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
     },
+    requires => {
+        'POE::Component::IRC::Plugin::BasePoCoWrap' => 0.004,
+        'POE::Component::WWW::Lipsum'               => 0.0102,
+    },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-WWW-Lipsum-*' ],
     create_makefile_pl => 'traditional',
 );

@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::WWW::Lipsum;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 use base 'POE::Component::IRC::Plugin::BasePoCoWrap';
 use POE::Component::WWW::Lipsum;

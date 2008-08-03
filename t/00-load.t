@@ -1,8 +1,10 @@
 #!/usr/bin/env perl
 
-use Test::More tests => 1;
+use Test::More tests => 3;
 
 BEGIN {
+    use_ok('POE::Component::IRC::Plugin::BasePoCoWrap');
+    use_ok('POE::Component::WWW::Lipsum');
 	use_ok( 'POE::Component::IRC::Plugin::WWW::Lipsum' );
 }
 

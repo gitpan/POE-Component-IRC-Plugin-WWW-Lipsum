@@ -8,7 +8,9 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/POE/Component/IRC/Plugin/WWW/Lipsum.pm',
           'PREREQ_PM' => {
-                           'Test::More' => 0
+                           'Test::More' => 0,
+                           'POE::Component::WWW::Lipsum' => '0.0102',
+                           'POE::Component::IRC::Plugin::BasePoCoWrap' => '0.004'
                          }
         )
 ;
