@@ -1,6 +1,6 @@
 ---
 name: POE-Component-IRC-Plugin-WWW-Lipsum
-version: 0.0102
+version: 0.0103
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
 abstract: plugin to generate Lorem Ipsum text in IRC
@@ -15,8 +15,8 @@ build_requires:
 provides:
   POE::Component::IRC::Plugin::WWW::Lipsum:
     file: lib/POE/Component/IRC/Plugin/WWW/Lipsum.pm
-    version: 0.0102
-generated_by: Module::Build version 0.2808
+    version: 0.0103
+generated_by: Module::Build version 0.33
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4

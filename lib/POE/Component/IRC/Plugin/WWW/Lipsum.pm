@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::WWW::Lipsum;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 
 use base 'POE::Component::IRC::Plugin::BasePoCoWrap';
 use POE::Component::WWW::Lipsum;
@@ -128,7 +128,7 @@ sub _make_poco_call {
     $args{what} ||= 'words';
     $args{amount} ||= '15';
 
-    if ( $args{html} =~ /yes/ ) {
+    if ( defined $args{html} and $args{html} =~ /yes/ ) {
         $args{html} = 1
     }
     else {
